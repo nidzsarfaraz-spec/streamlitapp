@@ -16,14 +16,14 @@ df=load_data(data_path)
 #st.dataframe(df)
 
 
-country_match=df.groupby("country")["Matches"].sum().sort_values().reset_index()
+#git country_match=df.groupby("country")["Matches"].sum().sort_values().reset_index()
 
-fig_country=px.pie(
-    country_match,
-    names="country",
-    values="Matches",
-    title="Country wise Matches"
-)
+#fig_country=px.pie(
+    #country_match,
+    #names="country",
+    #values="Matches",
+    #title="Country wise Matches"
+#)
 
 st.sidebar.header("filters")
 

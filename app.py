@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
+#import plotly.express as px
 
 
 st.title("Cric info app")
@@ -61,16 +61,16 @@ with col5:
     st.metric(label="Total Players",value=total_players)
 
 
-st.plotly_chart(fig_country)
+#st.plotly_chart(fig_country)
 
 
-country_runs=df.groupby("country")["Runs"].sum().sort_values().reset_index().head(10)
+#country_runs=df.groupby("country")["Runs"].sum().sort_values().reset_index().head(10)
 
-fig_country=px.bar(
-    country_runs,
-    x="country",
-    y="Runs",
-    title="country wise Runs"
-)
+#fig_country=px.bar(
+    #country_runs,
+    #x="country",
+    #y="Runs",
+    #title="country wise Runs"
+#)
 
-st.plotly_chart(fig_country)
+#st.plotly_chart(fig_country)
